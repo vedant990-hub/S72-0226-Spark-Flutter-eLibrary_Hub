@@ -90,13 +90,108 @@ flutter run
 - [lib/services/auth_service.dart](lib/services/auth_service.dart)
 - [lib/services/firestore_service.dart](lib/services/firestore_service.dart)
 
+
+## **3.11 Setting Up Flutter SDK, Android Studio, and First Emulator Run** ##
+
+Got it 😄 — clean, simple, and complete in one go.
+
+Here is your final README content 👇
+
 ---
 
-If you'd like, I can also:
-- Wire Firebase initialization into `main.dart` and update `pubspec.yaml` with dependencies.
-- Add small unit/widget tests to validate the Welcome screen behavior.
+# 🚀 Flutter Environment Setup and First App Run
 
-Happy to continue — tell me which next step you prefer.
-Firebase Storage
+## 📌 Overview
+
+This assignment involved installing and configuring the Flutter development environment and successfully running the first Flutter application on an emulator.
+
+The setup establishes a complete development environment for future Flutter and Firebase projects.
+
+---
+
+## 🛠 Steps Followed
+
+### 1️⃣ Installed Flutter SDK
+
+* Downloaded Flutter SDK from the official website.
+* Extracted it to `C:\flutter`.
+* Added `C:\flutter\bin` to the system PATH.
+* Verified installation using:
+
+```
+flutter doctor
+```
+
+---
+
+### 2️⃣ Installed and Configured Android Studio
+
+* Installed Android Studio.
+* Installed required components:
+
+  * Android SDK
+  * SDK Platform Tools
+  * Command-line tools
+  * Android Virtual Device (AVD)
+* Accepted licenses using:
+
+```
+flutter doctor --android-licenses
+```
+
+---
+
+### 3️⃣ Created and Configured Emulator
+
+* Opened AVD Manager.
+* Created a virtual device (Pixel device, Android 13+).
+* Launched emulator.
+* Verified device using:
+
+```
+flutter devices
+```
+
+---
+
+### 4️⃣ Created and Ran First Flutter App
+
+Created a new project:
+
+```
+flutter create first_flutter_app
+```
+
+Ran the app using:
+
+```
+flutter run
+```
+
+The default Flutter counter app successfully launched on the emulator / Chrome.
+
+---
+
+## ✅ Setup Verification
+
+### 📷 Flutter Doctor Output
+
+(Screenshot added here showing all green checks)
+
+### 📷 Running App on Emulator
+
+(Screenshot added here showing default counter app)
+
+---
+
+## 🧠 Reflection
+
+During installation, I faced issues related to PATH configuration, SDK placement, and Android toolchain setup. Initially, Flutter was not recognized due to environment variable misconfiguration. Additionally, Android command-line tools and licenses needed to be installed and accepted manually.
+
+Resolving these issues helped me better understand how development environments work, how SDK paths interact with system variables, and how Flutter connects with Android toolchains.
+
+This setup prepares me for building and testing real mobile applications by ensuring I can confidently run, debug, and deploy Flutter apps across devices. It also strengthens my troubleshooting skills, which are essential for real-world development.
 
 
+![alt text](image.png)
+![alt text](image-1.png)

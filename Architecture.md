@@ -278,3 +278,4 @@ flowchart TD
     C --> A
     D --> A
 This diagram represents how the Flutter client interacts with Firebase services.
+![alt text](image.png)
