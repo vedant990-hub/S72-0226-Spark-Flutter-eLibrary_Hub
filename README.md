@@ -195,3 +195,31 @@ This setup prepares me for building and testing real mobile applications by ensu
 
 ![alt text](image.png)
 ![alt text](image-1.png)
+
+## **3.12 Exploring Flutter Project Folder Structure and Understanding File Roles** ##
+
+# Flutter Project Structure Exploration
+
+This document explains the default folder structure generated when creating a new Flutter project. Understanding this structure helps in organizing code efficiently and maintaining scalability in real-world applications.
+
+## Folder Structure Overview
+
+The detailed explanation is available in:
+👉 `PROJECT_STRUCTURE.md`
+
+## Screenshot of Folder Hierarchy
+
+(Add a screenshot here from your IDE showing android/, ios/, lib/, test/, pubspec.yaml)
+
+## Reflection
+
+Understanding the purpose of each folder is important because it helps developers:
+
+- Organize application logic properly
+- Manage platform-specific configurations
+- Maintain clean architecture
+- Collaborate efficiently in team environments
+
+A well-structured project reduces confusion and improves development speed when working in teams.
+
+![alt text](image-2.png)
