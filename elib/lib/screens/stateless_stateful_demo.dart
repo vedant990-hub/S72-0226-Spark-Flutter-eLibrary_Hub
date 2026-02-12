@@ -1,46 +1,16 @@
 import 'package:flutter/material.dart';
 
-class StatelessStatefulDemo extends StatelessWidget {
-  const StatelessStatefulDemo({super.key});
+class DemoCounter extends StatefulWidget {
+  const DemoCounter({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Stateless vs Stateful Demo'),
-      ),
-      body: const Center(
-        child: DemoBody(),
-      ),
-    );
-  }
+  State<DemoCounter> createState() => _DemoCounterState();
 }
 
-/// Stateless Widget – Static UI
-class DemoHeader extends StatelessWidget {
-  const DemoHeader({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Text(
-      'Interactive Counter App',
-      style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-    );
-  }
-}
-
-/// Stateful Widget – Dynamic UI
-class DemoBody extends StatefulWidget {
-  const DemoBody({super.key});
-
-  @override
-  State<DemoBody> createState() => _DemoBodyState();
-}
-
-class _DemoBodyState extends State<DemoBody> {
+class _DemoCounterState extends State<DemoCounter> {
   int count = 0;
 
-  void incrementCounter() {
+  void increment() {
     setState(() {
       count++;
     });
@@ -51,7 +21,10 @@ class _DemoBodyState extends State<DemoBody> {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        const DemoHeader(),
+        const Text(
+          'Stateless vs Stateful Demo',
+          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+        ),
         const SizedBox(height: 20),
         Text(
           'Count: $count',
@@ -59,7 +32,7 @@ class _DemoBodyState extends State<DemoBody> {
         ),
         const SizedBox(height: 10),
         ElevatedButton(
-          onPressed: incrementCounter,
+          onPressed: increment,
           child: const Text('Increase'),
         ),
       ],
